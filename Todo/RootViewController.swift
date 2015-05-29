@@ -16,5 +16,8 @@ class RootViewController: UITableViewController {
         case 2: self.performSegueWithIdentifier("network", sender: indexPath)
         default: break
         }
+        
+//        self.navigationController?.pushViewController(TodoViewController(), animated: true)
+//        self.presentViewController(TodoViewController(), animated: true, completion: {})
     }
 }

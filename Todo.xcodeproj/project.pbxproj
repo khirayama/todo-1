@@ -17,6 +17,7 @@
 		E4BDED8A1B18769100BFC188 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BDED891B18769100BFC188 /* TodoViewController.swift */; };
 		E4BDED8C1B1876A200BFC188 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BDED8B1B1876A200BFC188 /* Task.swift */; };
 		E4BDED8E1B187A4200BFC188 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BDED8D1B187A4200BFC188 /* WebViewController.swift */; };
+		E4BDED901B187CC900BFC188 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BDED8F1B187CC900BFC188 /* NetworkViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		E4BDED891B18769100BFC188 /* TodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
 		E4BDED8B1B1876A200BFC188 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		E4BDED8D1B187A4200BFC188 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		E4BDED8F1B187CC900BFC188 /* NetworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				E4BDED891B18769100BFC188 /* TodoViewController.swift */,
 				E4BDED8B1B1876A200BFC188 /* Task.swift */,
 				E4BDED8D1B187A4200BFC188 /* WebViewController.swift */,
+				E4BDED8F1B187CC900BFC188 /* NetworkViewController.swift */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				E4BDED6A1B18713C00BFC188 /* ViewController.swift in Sources */,
 				E4BDED8C1B1876A200BFC188 /* Task.swift in Sources */,
 				E4BDED681B18713C00BFC188 /* AppDelegate.swift in Sources */,
+				E4BDED901B187CC900BFC188 /* NetworkViewController.swift in Sources */,
 				E4BDED881B1874A700BFC188 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

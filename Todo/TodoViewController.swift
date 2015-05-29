@@ -34,12 +34,27 @@ class TodoViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        // StoryboardのCell(TaskCell)との紐付け
         let cell = tableView.dequeueReusableCellWithIdentifier("TaskCell", forIndexPath: indexPath) as! UITableViewCell
-
+        
         let task = tasks[indexPath.row]
+        // 名前をCellに表示
         cell.textLabel?.text = task.name
         
+        // 完了処理
+        // 完了してたら打ち消し線表示したい
+        cell.textLabel?.textColor = task.isFinished ? UIColor.lightGrayColor() : UIColor.blackColor()
+        
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        let task = tasks[indexPath.row]
+        task.isFinished = !task.isFinished
+        
+        tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
     }
 
     /*
